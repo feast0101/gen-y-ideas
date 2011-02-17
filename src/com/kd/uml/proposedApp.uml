@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_GDtPEDkoEeCW2p9y2dHhbQ">
+  <elementImport xmi:id="_GER20DkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_GEc18DkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_GEc18TkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_GEc18jkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_K04a4DkvEeCW2p9y2dHhbQ" name="Log in">
+    <node xmi:type="uml:CallOperationAction" xmi:id="_N8wKwDkvEeCW2p9y2dHhbQ" name="OAuth authentication" incoming="_d1rLQDkvEeCW2p9y2dHhbQ"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Rak8gDkvEeCW2p9y2dHhbQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_UrnPcDkvEeCW2p9y2dHhbQ" outgoing="_d1rLQDkvEeCW2p9y2dHhbQ"/>
+    <node xmi:type="uml:DataStoreNode" xmi:id="_gwNCsDkvEeCW2p9y2dHhbQ" name="Google DB"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mHAIQDkvEeCW2p9y2dHhbQ" name="OpaqueAction"/>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_nlk_EDkvEeCW2p9y2dHhbQ" name="ActivityParameter"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_qNBicDkvEeCW2p9y2dHhbQ" name="CreateObjectAction"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_A9zLkDkwEeCW2p9y2dHhbQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_d1rLQDkvEeCW2p9y2dHhbQ" name="Log in" source="_UrnPcDkvEeCW2p9y2dHhbQ" target="_N8wKwDkvEeCW2p9y2dHhbQ"/>
+    <group xmi:type="uml:LoopNode" xmi:id="_0D_nkDkvEeCW2p9y2dHhbQ" name="Loop Node">
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_awe78DkvEeCW2p9y2dHhbQ" name="Reject"/>
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_YgNicDkvEeCW2p9y2dHhbQ" name="Approved"/>
+    </group>
+  </packagedElement>
+</uml:Package>
