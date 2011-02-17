@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_UsUeQDkoEeCW2p9y2dHhbQ" name="com.kd.home">
+  <elementImport xmi:id="_Us3Q0DkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_Us3Q0TkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_Us3Q0jkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_Us3Q0zkoEeCW2p9y2dHhbQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_aoUQsDkqEeCW2p9y2dHhbQ"/>
+  <elementImport xmi:id="_bBHyQDkqEeCW2p9y2dHhbQ"/>
+  <elementImport xmi:id="_bKGvIDkqEeCW2p9y2dHhbQ"/>
+  <elementImport xmi:id="_tZpr8DkuEeCW2p9y2dHhbQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WMHdEDkoEeCW2p9y2dHhbQ" name="Log in">
+    <include xmi:id="_DXy7EDkrEeCW2p9y2dHhbQ" addition="_hSqBwDkqEeCW2p9y2dHhbQ"/>
+    <extensionPoint xmi:id="_agJeEDkoEeCW2p9y2dHhbQ" name="Google OAuth"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Xvab0DkoEeCW2p9y2dHhbQ" name="Admin">
+    <generalization xmi:id="_QhWyUDkrEeCW2p9y2dHhbQ" general="_IUJgUDkrEeCW2p9y2dHhbQ"/>
+    <generalization xmi:id="_Rm-9oDkrEeCW2p9y2dHhbQ" general="_2SYkADkqEeCW2p9y2dHhbQ"/>
+    <generalization xmi:id="_ZCd3wDkrEeCW2p9y2dHhbQ" general="_PWyukDkpEeCW2p9y2dHhbQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_it14QDkoEeCW2p9y2dHhbQ" name="Guest">
+    <generalization xmi:id="_GLEzoDkuEeCW2p9y2dHhbQ" general="_W6Du4DktEeCW2p9y2dHhbQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kfbKoDkoEeCW2p9y2dHhbQ" name="Registered User">
+    <generalization xmi:id="_EvjQ0DkuEeCW2p9y2dHhbQ" general="_WMHdEDkoEeCW2p9y2dHhbQ"/>
+    <generalization xmi:id="_HOcVIDkuEeCW2p9y2dHhbQ" general="_W6Du4DktEeCW2p9y2dHhbQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DwuDUDkpEeCW2p9y2dHhbQ" name="Register User" clientDependency="_dS1ysDkpEeCW2p9y2dHhbQ">
+    <extensionPoint xmi:id="_azO1UDksEeCW2p9y2dHhbQ" name="Submits Required info"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PWyukDkpEeCW2p9y2dHhbQ" name="Generate Report">
+    <extensionPoint xmi:id="_QfG6IDksEeCW2p9y2dHhbQ" name="Daily Usage Report"/>
+    <extensionPoint xmi:id="_RyLrkDksEeCW2p9y2dHhbQ" name="Weekly Usage Report"/>
+    <extensionPoint xmi:id="_XaWN8DksEeCW2p9y2dHhbQ" name="Monthly usage Report"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_dS1ysDkpEeCW2p9y2dHhbQ" name="Approval" supplier="_Xvab0DkoEeCW2p9y2dHhbQ" client="_DwuDUDkpEeCW2p9y2dHhbQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hSqBwDkqEeCW2p9y2dHhbQ" name="retrieve user data">
+    <extend xmi:id="_4P8gEDkuEeCW2p9y2dHhbQ" extendedCase="_x9tF8DkuEeCW2p9y2dHhbQ"/>
+    <extensionPoint xmi:id="_qp7dsDkrEeCW2p9y2dHhbQ" name="run GQL "/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2SYkADkqEeCW2p9y2dHhbQ" name="Admin Over ride">
+    <extensionPoint xmi:id="_HV558DksEeCW2p9y2dHhbQ" name="Adhoc over ride in special case "/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_IUJgUDkrEeCW2p9y2dHhbQ" name="Manage Users">
+    <extensionPoint xmi:id="_w3E8cDkrEeCW2p9y2dHhbQ" name="Dashboard to check user status"/>
+    <extensionPoint xmi:id="_1uIyADkrEeCW2p9y2dHhbQ" name="Granting Privileges"/>
+    <extensionPoint xmi:id="_5ZBIUDkrEeCW2p9y2dHhbQ" name="Approving Registration"/>
+    <extensionPoint xmi:id="_-JiRADkrEeCW2p9y2dHhbQ" name="Rejecting Registration"/>
+    <extensionPoint xmi:id="_AsYBMDksEeCW2p9y2dHhbQ" name="On hold-Sicking more info"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_6N1bADksEeCW2p9y2dHhbQ" name="Google DB layer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_W6Du4DktEeCW2p9y2dHhbQ" name="Welcome Page">
+    <extend xmi:id="_khXSEDktEeCW2p9y2dHhbQ" extendedCase="_DwuDUDkpEeCW2p9y2dHhbQ"/>
+    <extend xmi:id="_mxQREDktEeCW2p9y2dHhbQ" extendedCase="_WMHdEDkoEeCW2p9y2dHhbQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_SQftUDkuEeCW2p9y2dHhbQ">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_SQg7cDkuEeCW2p9y2dHhbQ">
+      <body>Validation of data</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_x9tF8DkuEeCW2p9y2dHhbQ" name="user Home Page"/>
+</uml:Package>
