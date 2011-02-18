@@ -35,13 +35,14 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_DwuDUDkpEeCW2p9y2dHhbQ" name="Register User" clientDependency="_dS1ysDkpEeCW2p9y2dHhbQ">
     <extensionPoint xmi:id="_azO1UDksEeCW2p9y2dHhbQ" name="Submits Required info"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_PWyukDkpEeCW2p9y2dHhbQ" name="Generate Report">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PWyukDkpEeCW2p9y2dHhbQ" name="Generate Report" useCase="_PWyukDkpEeCW2p9y2dHhbQ _hSqBwDkqEeCW2p9y2dHhbQ" subject="_PWyukDkpEeCW2p9y2dHhbQ">
+    <redefinedClassifier xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EStructuralFeature-EJavaClass_Wildcard"/>
     <extensionPoint xmi:id="_QfG6IDksEeCW2p9y2dHhbQ" name="Daily Usage Report"/>
     <extensionPoint xmi:id="_RyLrkDksEeCW2p9y2dHhbQ" name="Weekly Usage Report"/>
     <extensionPoint xmi:id="_XaWN8DksEeCW2p9y2dHhbQ" name="Monthly usage Report"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_dS1ysDkpEeCW2p9y2dHhbQ" name="Approval" supplier="_Xvab0DkoEeCW2p9y2dHhbQ" client="_DwuDUDkpEeCW2p9y2dHhbQ"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_hSqBwDkqEeCW2p9y2dHhbQ" name="retrieve user data">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hSqBwDkqEeCW2p9y2dHhbQ" name="retrieve user data" subject="_PWyukDkpEeCW2p9y2dHhbQ">
     <extend xmi:id="_4P8gEDkuEeCW2p9y2dHhbQ" extendedCase="_x9tF8DkuEeCW2p9y2dHhbQ"/>
     <extensionPoint xmi:id="_qp7dsDkrEeCW2p9y2dHhbQ" name="run GQL "/>
   </packagedElement>
@@ -66,4 +67,5 @@
     </specification>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_x9tF8DkuEeCW2p9y2dHhbQ" name="user Home Page"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Y45-ADuaEeCeSN0ryJi74w" name="UseCase"/>
 </uml:Package>
