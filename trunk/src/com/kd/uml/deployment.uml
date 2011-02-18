@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML">
+  <uml:Package xmi:id="_JGnfEDucEeCeSN0ryJi74w">
+    <elementImport xmi:id="_JHGAMDucEeCeSN0ryJi74w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_JHGAMTucEeCeSN0ryJi74w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <elementImport xmi:id="_JHGAMjucEeCeSN0ryJi74w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+    </elementImport>
+    <elementImport xmi:id="_JHGAMzucEeCeSN0ryJi74w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Device" xmi:id="_a3KIgDucEeCeSN0ryJi74w" name="Web Server(Google App Engine)">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_qNFwsDucEeCeSN0ryJi74w" clientDependency="_QbkogDueEeCeSN0ryJi74w _eVOVYDudEeCeSN0ryJi74w" fileName="Application"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Device" xmi:id="_mkmAADucEeCeSN0ryJi74w" name="DB Engine">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="__2EO0DudEeCeSN0ryJi74w" clientDependency="_mEeDkDueEeCeSN0ryJi74w" fileName="DataBase"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ExecutionEnvironment" xmi:id="_tla-cDucEeCeSN0ryJi74w" name="Google App Engine" clientDependency="_AwKVADudEeCeSN0ryJi74w">
+      <ownedAttribute xmi:id="_1kXK8jucEeCeSN0ryJi74w" name="dst" type="_mkmAADucEeCeSN0ryJi74w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1kXyADucEeCeSN0ryJi74w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1kXK8zucEeCeSN0ryJi74w" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_wDoGQDucEeCeSN0ryJi74w" fileName="MyCoolApp"/>
+      <deployment xmi:id="_AwKVADudEeCeSN0ryJi74w" supplier="_33r4cDucEeCeSN0ryJi74w" client="_tla-cDucEeCeSN0ryJi74w" deployedArtifact="_33r4cDucEeCeSN0ryJi74w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_DDNVsDudEeCeSN0ryJi74w" name="Client Browser">
+      <ownedAttribute xmi:id="_HlzXJDudEeCeSN0ryJi74w" name="dst" type="_tla-cDucEeCeSN0ryJi74w" association="_HlzXIDudEeCeSN0ryJi74w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlzXJjudEeCeSN0ryJi74w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlzXJTudEeCeSN0ryJi74w" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_HlzXIDudEeCeSN0ryJi74w" name="http request" memberEnd="_HlzXITudEeCeSN0ryJi74w _HlzXJDudEeCeSN0ryJi74w">
+      <ownedEnd xmi:id="_HlzXITudEeCeSN0ryJi74w" name="src" type="_DDNVsDudEeCeSN0ryJi74w" association="_HlzXIDudEeCeSN0ryJi74w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlzXIzudEeCeSN0ryJi74w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlzXIjudEeCeSN0ryJi74w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_eVOVYDudEeCeSN0ryJi74w" supplier="_tla-cDucEeCeSN0ryJi74w" client="_qNFwsDucEeCeSN0ryJi74w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_QbkogDueEeCeSN0ryJi74w" name="GQL" supplier="__2EO0DudEeCeSN0ryJi74w" client="_qNFwsDucEeCeSN0ryJi74w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_mEeDkDueEeCeSN0ryJi74w" supplier="_tla-cDucEeCeSN0ryJi74w" client="__2EO0DudEeCeSN0ryJi74w"/>
+  </uml:Package>
+  <uml:DeploymentSpecification xmi:id="_33r4cDucEeCeSN0ryJi74w" name="Specification">
+    <ownedAttribute xmi:id="_PvEkUDudEeCeSN0ryJi74w" name="property"/>
+  </uml:DeploymentSpecification>
+</xmi:XMI>
