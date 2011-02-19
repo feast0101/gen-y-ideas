@@ -33,6 +33,7 @@
     <generalization xmi:id="_HOcVIDkuEeCW2p9y2dHhbQ" general="_W6Du4DktEeCW2p9y2dHhbQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_DwuDUDkpEeCW2p9y2dHhbQ" name="Register User" clientDependency="_dS1ysDkpEeCW2p9y2dHhbQ">
+    <generalization xmi:id="_EXN8ADwxEeCrgP_0er0Oug" general="_Xvab0DkoEeCW2p9y2dHhbQ"/>
     <extensionPoint xmi:id="_azO1UDksEeCW2p9y2dHhbQ" name="Submits Required info"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_PWyukDkpEeCW2p9y2dHhbQ" name="Generate Report" useCase="_PWyukDkpEeCW2p9y2dHhbQ _hSqBwDkqEeCW2p9y2dHhbQ" subject="_PWyukDkpEeCW2p9y2dHhbQ">
@@ -41,7 +42,7 @@
     <extensionPoint xmi:id="_RyLrkDksEeCW2p9y2dHhbQ" name="Weekly Usage Report"/>
     <extensionPoint xmi:id="_XaWN8DksEeCW2p9y2dHhbQ" name="Monthly usage Report"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_dS1ysDkpEeCW2p9y2dHhbQ" name="Approval" supplier="_Xvab0DkoEeCW2p9y2dHhbQ" client="_DwuDUDkpEeCW2p9y2dHhbQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_dS1ysDkpEeCW2p9y2dHhbQ" name="Approval" supplier="_Xvab0DkoEeCW2p9y2dHhbQ" client="_DwuDUDkpEeCW2p9y2dHhbQ _6N1bADksEeCW2p9y2dHhbQ"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_hSqBwDkqEeCW2p9y2dHhbQ" name="retrieve user data" subject="_PWyukDkpEeCW2p9y2dHhbQ">
     <extend xmi:id="_4P8gEDkuEeCW2p9y2dHhbQ" extendedCase="_x9tF8DkuEeCW2p9y2dHhbQ"/>
     <extensionPoint xmi:id="_qp7dsDkrEeCW2p9y2dHhbQ" name="run GQL "/>
@@ -56,7 +57,7 @@
     <extensionPoint xmi:id="_-JiRADkrEeCW2p9y2dHhbQ" name="Rejecting Registration"/>
     <extensionPoint xmi:id="_AsYBMDksEeCW2p9y2dHhbQ" name="On hold-Sicking more info"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_6N1bADksEeCW2p9y2dHhbQ" name="Google DB layer"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_6N1bADksEeCW2p9y2dHhbQ" name="Google DB layer" clientDependency="_dS1ysDkpEeCW2p9y2dHhbQ"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_W6Du4DktEeCW2p9y2dHhbQ" name="Welcome Page">
     <extend xmi:id="_khXSEDktEeCW2p9y2dHhbQ" extendedCase="_DwuDUDkpEeCW2p9y2dHhbQ"/>
     <extend xmi:id="_mxQREDktEeCW2p9y2dHhbQ" extendedCase="_WMHdEDkoEeCW2p9y2dHhbQ"/>
@@ -67,5 +68,4 @@
     </specification>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_x9tF8DkuEeCW2p9y2dHhbQ" name="user Home Page"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_Y45-ADuaEeCeSN0ryJi74w" name="UseCase"/>
 </uml:Package>
