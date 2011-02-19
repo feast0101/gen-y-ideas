@@ -24,6 +24,7 @@
     <generalization xmi:id="_QhWyUDkrEeCW2p9y2dHhbQ" general="_IUJgUDkrEeCW2p9y2dHhbQ"/>
     <generalization xmi:id="_Rm-9oDkrEeCW2p9y2dHhbQ" general="_2SYkADkqEeCW2p9y2dHhbQ"/>
     <generalization xmi:id="_ZCd3wDkrEeCW2p9y2dHhbQ" general="_PWyukDkpEeCW2p9y2dHhbQ"/>
+    <generalization xmi:id="_8CGBIDxREeCzVYlUr0stuQ" general="_4OgawDxREeCzVYlUr0stuQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_it14QDkoEeCW2p9y2dHhbQ" name="Guest">
     <generalization xmi:id="_GLEzoDkuEeCW2p9y2dHhbQ" general="_W6Du4DktEeCW2p9y2dHhbQ"/>
@@ -68,4 +69,9 @@
     </specification>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_x9tF8DkuEeCW2p9y2dHhbQ" name="user Home Page"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4OgawDxREeCzVYlUr0stuQ" name="App Logs">
+    <extensionPoint xmi:id="_IM04oDxSEeCzVYlUr0stuQ" name="Daily Logs"/>
+    <extensionPoint xmi:id="_JcyEoDxSEeCzVYlUr0stuQ" name="Weekly"/>
+    <extensionPoint xmi:id="_KQEiwDxSEeCzVYlUr0stuQ" name="Monthly"/>
+  </packagedElement>
 </uml:Package>
