@@ -5,14 +5,14 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<servlet-name>MyCoolApp</servlet-name>
-		<servlet-class>com.kd.app.MyCoolAppServlet</servlet-class>
+		<servlet-name>GoogleMyApp</servlet-name>
+		<servlet-class>com.kd.user.MycoolPortalServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>MyCoolApp</servlet-name>
-		<url-pattern>/mycoolapp</url-pattern>
+		<servlet-name>GoogleMyApp</servlet-name>
+		<url-pattern>/GoogleMyApp</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>AdminHome.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 </web-app>
